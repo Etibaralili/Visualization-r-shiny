@@ -1,0 +1,52 @@
+GeoFips,GeoName,LineCode,Description,2007,2008,2009
+6000,California,1,All industry total,1955856,1990678.2,1920061.8
+6000,California,2,  Private industries,1713469.2,1736169.4,1665581.8
+6000,California,3,"    Agriculture, forestry, fishing and hunting",28327.6,26060.5,25265.9
+6000,California,4,      Farms,20535.4,18233.1,17706.6
+6000,California,5,"      Forestry, fishing, and related activities",7792.2,7827.4,7559.3
+6000,California,6,"    Mining, quarrying, and oil and gas extraction",21459.4,25724.9,17929.5
+6000,California,7,      Oil and gas extraction,18180.2,22337.1,14938.4
+6000,California,8,      Mining (except oil and gas),1728.4,1561.4,1709.4
+6000,California,9,      Support activities for mining,1550.9,1826.4,1281.7
+6000,California,10,    Utilities,25459.3,25039,27489.2
+6000,California,11,    Construction,94651.3,76877,65367.9
+6000,California,12,    Manufacturing,233499.5,249824.5,232732.5
+12000,Florida,1,All industry total,768661,750501.6,724582.2
+12000,Florida,2,  Private industries,675719.3,654972.3,626558.9
+12000,Florida,3,"    Agriculture, forestry, fishing and hunting",6329.7,5740.8,5574.1
+12000,Florida,4,      Farms,4428.8,3947,3715.9
+12000,Florida,5,"      Forestry, fishing, and related activities",1900.8,1793.9,1858.2
+12000,Florida,6,"    Mining, quarrying, and oil and gas extraction",1493.3,1920.6,1220.5
+12000,Florida,7,      Oil and gas extraction,33,51.4,30.3
+12000,Florida,8,      Mining (except oil and gas),1401.5,1817.4,1151.9
+12000,Florida,9,      Support activities for mining,58.8,51.7,38.2
+12000,Florida,10,    Utilities,14059,14387.7,16154
+12000,Florida,11,    Construction,57133.7,44242,33892.3
+12000,Florida,12,    Manufacturing,42228.7,39510,38031.9
+25000,Massachusetts,1,All industry total,379877.2,388583.2,391265.1
+25000,Massachusetts,2,  Private industries,338211.9,344872.7,346701.7
+25000,Massachusetts,3,"    Agriculture, forestry, fishing and hunting",926.2,928.8,970.1
+25000,Massachusetts,4,      Farms,270,338.8,286.9
+25000,Massachusetts,5,"      Forestry, fishing, and related activities",656.2,589.9,683.1
+25000,Massachusetts,6,"    Mining, quarrying, and oil and gas extraction",246.4,148.3,171.3
+25000,Massachusetts,7,      Oil and gas extraction,1.5,1.8,1.7
+25000,Massachusetts,8,      Mining (except oil and gas),241.3,141.9,162.7
+25000,Massachusetts,9,      Support activities for mining,3.5,4.6,6.9
+25000,Massachusetts,10,    Utilities,4922.2,5825,4801.4
+25000,Massachusetts,11,    Construction,15080.5,13975.3,12645.5
+25000,Massachusetts,12,    Manufacturing,44979.4,42126.2,41363
+37000,North Carolina,1,All industry total,396347.6,413363.3,406477.4
+37000,North Carolina,2,  Private industries,341561,354667.8,345575.2
+37000,North Carolina,3,"    Agriculture, forestry, fishing and hunting",3874,3933.4,3916.8
+37000,North Carolina,4,      Farms,3215.6,3292.6,3215.2
+37000,North Carolina,5,"      Forestry, fishing, and related activities",658.4,640.9,701.5
+37000,North Carolina,6,"    Mining, quarrying, and oil and gas extraction",1099.2,779.9,730.1
+37000,North Carolina,7,      Oil and gas extraction,5.5,2.8,5.1
+37000,North Carolina,8,      Mining (except oil and gas),1081.1,760,713.1
+37000,North Carolina,9,      Support activities for mining,12.6,17,12
+37000,North Carolina,10,    Utilities,6043.7,7070.1,7583.4
+37000,North Carolina,11,    Construction,21051.8,18453.5,15045.7
+37000,North Carolina,12,    Manufacturing,86243.2,83550.6,87312
+Legend / Footnotes:,,,,,,
+1/ Gross Domestic Product (GDP) is in millions of current dollars (not adjusted for inflation). Industry detail is based on the 2012 North American Industry Classification System (NAICS). Calculations are performed on unrounded data.,,,,,,
+"Last updated: April 7, 2020-- new statistics for 2019.",,,,,,

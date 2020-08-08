@@ -1,0 +1,18 @@
+GeoFips,GeoName,LineCode,Description,2007,2008,2009,2019
+6000,California,1,Personal income (millions of dollars),1581573.3,1606579.9,1554013.3,2633925.5
+6000,California,2,Population (persons) 1/,36250311,36604337,36961229,39512223
+6000,California,3,Per capita personal income (dollars) 2/,43629,43890,42044,66661
+12000,Florida,1,Personal income (millions of dollars),727404.7,727138.5,682891.7,1116596.9
+12000,Florida,2,Population (persons) 1/,18367842,18527305,18652644,21477737
+12000,Florida,3,Per capita personal income (dollars) 2/,39602,39247,36611,51989
+25000,Massachusetts,1,Personal income (millions of dollars),323111.3,335841.4,332020.6,516713.6
+25000,Massachusetts,2,Population (persons) 1/,6431559,6468967,6517613,6892503
+25000,Massachusetts,3,Per capita personal income (dollars) 2/,50238,51916,50942,74967
+37000,North Carolina,1,Personal income (millions of dollars),329509.4,350848.3,338315.7,501362.1
+37000,North Carolina,2,Population (persons) 1/,9118037,9309449,9449566,10488084
+37000,North Carolina,3,Per capita personal income (dollars) 2/,36138,37687,35802,47803
+Legend / Footnotes:,,,,,,,
+1/ Census Bureau midyear population estimate. Estimates for 2010-2019 reflect Census Bureau midyear state population estimates available as of December 2019.,,,,,,,
+2/ Per capita personal income is total personal income divided by total midyear population.,,,,,,,
+Note-- All dollar estimates are in millions of current dollars (not adjusted for inflation). Calculations are performed on unrounded data.,,,,,,,
+"Last updated: March 24, 2020-- new statistics for 2019; revised statistics for 2010-2018.",,,,,,,

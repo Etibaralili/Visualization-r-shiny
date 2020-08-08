@@ -1,0 +1,70 @@
+GeoFips,GeoName,LineCode,Description,2007,2008,2009
+6000,California,50,Wages and salaries by place of work (thousands of dollars),834657416,843120597,798912393
+6000,California,81,  Farm wages and salaries,4313071,4645124,5036104
+6000,California,100,"      Forestry, fishing, and related activities",4030110,4235957,3968698
+6000,California,103,        Support activities for agriculture and forestry,3880544,4074579,3846537
+6000,California,200,"      Mining, quarrying, and oil and gas extraction",2677318,3098830,2738681
+6000,California,201,        Oil and gas extraction,1511099,1815680,1674670
+6000,California,202,        Mining (except oil and gas),413156,397554,353855
+6000,California,203,        Support activities for mining,753063,885596,710156
+6000,California,300,      Utilities,5531981,5698538,6058941
+6000,California,400,      Construction,47976570,44647698,35829121
+6000,California,401,        Construction of buildings,12779273,11559765,9140320
+6000,California,402,        Heavy and civil engineering construction,6693614,6376066,5316431
+6000,California,403,        Specialty trade contractors,28503683,26711867,21372370
+6000,California,500,      Manufacturing,98469022,95715179,89600289
+6000,California,510,        Durable goods manufacturing,70988875,68267676,62055545
+6000,California,511,          Wood product manufacturing,1316431,1155964,887690
+12000,Florida,50,Wages and salaries by place of work (thousands of dollars),343027610,339020649,320654389
+12000,Florida,81,  Farm wages and salaries,1094681,1211124,1174607
+12000,Florida,100,"      Forestry, fishing, and related activities",990231,977799,965095
+12000,Florida,103,        Support activities for agriculture and forestry,869979,862301,852850
+12000,Florida,200,"      Mining, quarrying, and oil and gas extraction",277115,258274,209229
+12000,Florida,201,        Oil and gas extraction,7730,8142,6285
+12000,Florida,202,        Mining (except oil and gas),242525,226613,185708
+12000,Florida,203,        Support activities for mining,26860,23519,17236
+12000,Florida,300,      Utilities,1684733,1823599,1893735
+12000,Florida,400,      Construction,26349102,22631882,17233966
+12000,Florida,401,        Construction of buildings,7109199,5800471,4302850
+12000,Florida,402,        Heavy and civil engineering construction,3884038,3490574,2753002
+12000,Florida,403,        Specialty trade contractors,15355865,13340837,10178114
+12000,Florida,500,      Manufacturing,19400666,18770763,16896178
+12000,Florida,510,        Durable goods manufacturing,13738207,13169224,11746349
+12000,Florida,511,          Wood product manufacturing,639288,476082,336126
+25000,Massachusetts,50,Wages and salaries by place of work (thousands of dollars),184209823,189831902,181837492
+25000,Massachusetts,81,  Farm wages and salaries,110722,101702,98376
+25000,Massachusetts,100,"      Forestry, fishing, and related activities",239347,239856,244165
+25000,Massachusetts,103,        Support activities for agriculture and forestry,95674,105916,99656
+25000,Massachusetts,200,"      Mining, quarrying, and oil and gas extraction",81472,66056,64723
+25000,Massachusetts,201,        Oil and gas extraction,(D),(D),(D)
+25000,Massachusetts,202,        Mining (except oil and gas),79314,63284,60500
+25000,Massachusetts,203,        Support activities for mining,(D),(D),(D)
+25000,Massachusetts,300,      Utilities,927654,997477,1049498
+25000,Massachusetts,400,      Construction,8367670,8480165,7101114
+25000,Massachusetts,401,        Construction of buildings,2045113,2037889,1673232
+25000,Massachusetts,402,        Heavy and civil engineering construction,953285,948861,832766
+25000,Massachusetts,403,        Specialty trade contractors,5369272,5493415,4595116
+25000,Massachusetts,500,      Manufacturing,20576495,19798227,17968097
+25000,Massachusetts,510,        Durable goods manufacturing,14837041,14372790,12900994
+25000,Massachusetts,511,          Wood product manufacturing,132756,117024,94580
+37000,North Carolina,50,Wages and salaries by place of work (thousands of dollars),173894615,177813382,169548458
+37000,North Carolina,81,  Farm wages and salaries,641590,581013,478139
+37000,North Carolina,100,"      Forestry, fishing, and related activities",344524,348951,355858
+37000,North Carolina,103,        Support activities for agriculture and forestry,225028,234496,252770
+37000,North Carolina,200,"      Mining, quarrying, and oil and gas extraction",256996,204862,176312
+37000,North Carolina,201,        Oil and gas extraction,(D),(D),707
+37000,North Carolina,202,        Mining (except oil and gas),247904,193537,169158
+37000,North Carolina,203,        Support activities for mining,(D),(D),6447
+37000,North Carolina,300,      Utilities,961987,996832,963917
+37000,North Carolina,400,      Construction,10425570,9871854,7998750
+37000,North Carolina,401,        Construction of buildings,2815419,2561631,2016665
+37000,North Carolina,402,        Heavy and civil engineering construction,1526758,1441419,1151276
+37000,North Carolina,403,        Specialty trade contractors,6083393,5868804,4830809
+37000,North Carolina,500,      Manufacturing,26348676,25582531,22716116
+37000,North Carolina,510,        Durable goods manufacturing,14940975,14470017,12500907
+37000,North Carolina,511,          Wood product manufacturing,894333,779439,592276
+Legend / Footnotes:,,,,,,
+1/ The estimates of wages and salaries for 1998-2006 are based on the 2002 North American Industry Classification System (NAICS). The estimates for 2007-2010 are based on the 2007 NAICS. The estimates for 2011-2016 are based on the 2012 NAICS. The estimates for 2017 forward are based on the 2017 NAICS.,,,,,,
+Note-- All dollar estimates are in thousands of current dollars (not adjusted for inflation). Statistics presented in thousands of dollars do not indicate more precision than statistics presented  in millions of dollars.,,,,,,
+(D) Not shown to avoid disclosure of confidential information; estimates are included in higher-level totals.,,,,,,
+"Last updated: March 24, 2020-- new statistics for 2019.",,,,,,

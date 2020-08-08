@@ -1,0 +1,444 @@
+---
+title: "Economic factors of Great Recession"
+output: flexdashboard::flex_dashboard
+---
+```{r Global Setup, include=FALSE, echo=FALSE, message=FALSE}
+
+knitr::opts_chunk$set(fig.width = 5, fig.asp = 1/3)
+```
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyr)
+library(dplyr)
+library(plotly)
+library(ggplot2)
+library(ggvis)
+library(DT)
+library(tidyverse)
+library(lubridate)
+library(Hmisc)
+library(readr)
+library(DT)
+library(magrittr)
+library(lubridate)
+library(tidyverse)
+library(RColorBrewer)
+```
+###                                   Report
+```{r}
+income<- read.csv('income.csv')
+income <- na.omit(income)
+```
+Page 1
+=====================================  
+    
+Column {data-width=600}
+-------------------------------------
+### ggplot of income- Data 2007
+```{r}
+aChart <- ggplot(income) +
+    geom_col(aes(x = GeoName, y = X2007, fill=GeoName))+
+    labs(title = "Income per state", 
+         subtitle = "{in US $",
+         caption = "Income",
+         x= "State",
+         y = "2007 Data(in $)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+```
+
+
+
+
+Column {data-width=400}
+-------------------------------------
+### ggplot income- 2008
+```{r}
+aChart <- ggplot(income) +
+    geom_col(aes(x = GeoName, y = X2008, fill=GeoName))+
+    labs(title = "Income per state", 
+         subtitle = "{in US $",
+         caption = "Income",
+         x= "State",
+         y = "2008 Data(in $)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+```
+
+
+
+
+### ggplot Income- 2009
+```{r}
+aChart <- ggplot(income) +
+    geom_col(aes(x = GeoName, y = X2009, fill=GeoName))+
+    labs(title = "Income per state", 
+         subtitle = "{in US $",
+         caption = "Income",
+         x= "State",
+         y = "2009 Data(in $)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 2 {data-orientation=rows}
+=====================================     
+   
+Column {data-width=600}
+-------------------------------------
+```{r}
+gdp<- read.csv('gdp.csv')
+gdp <- na.omit(gdp)
+```
+
+
+### ggplot of GDP per state in 2008
+```{r}
+aChart <- ggplot(gdp) +
+    geom_col(aes(x = GeoName, y = X2008, fill=GeoName))+
+    labs(title = "GDP per state", 
+         caption = "Gross domestic product",
+         x= "State",
+         y = "2008 Data($)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+
+```
+
+
+
+### Chart 2 ggplot of GDP per state in 2009
+```{r}
+aChart <- ggplot(gdp) +
+    geom_col(aes(x = GeoName, y = X2009, fill=GeoName))+
+    labs(title = "GDP per state", 
+         caption = "Gross domestic product",
+         x= "State",
+         y = "2009 Data($)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+```
+
+Column {data-width=400}
+-------------------------------------
+
+
+### Chart 3 GDP per industry in different states in 2008
+```{r}
+
+
+p10 <- gdp %>% 
+  group_by(GeoName) %>% 
+  arrange(desc(GeoName)) %>% 
+  head(100) %>% 
+  select(X2008) %>% 
+  DT::datatable(options = list(pageLength=500)) %>% 
+  formatCurrency(columns = 'X2008') %>% 
+  formatStyle(.,    'X2008',
+    background = styleColorBar(gdp$X2008, 'steelblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+p10
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 3
+=====================================  
+    
+Column {data-width=600}
+-------------------------------------
+
+
+### ggplot of GDP per state in 2008
+```{r}
+aChart <- ggplot(gdp) +
+    geom_col(aes(x = GeoName, y = X2008, fill=GeoName))+
+    labs(title = "GDP per state", 
+         caption = "Gross domestic product",
+         x= "State",
+         y = "2008 Data($)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+
+```
+   
+Column {data-width=400}
+-------------------------------------
+
+
+### ggplot of GDP per state in 2009
+```{r}
+aChart <- ggplot(gdp) +
+    geom_col(aes(x = GeoName, y = X2009, fill=GeoName))+
+    labs(title = "GDP per state", 
+         caption = "Gross domestic product",
+         x= "State",
+         y = "2009 Data($)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+```
+
+
+
+### GDP per industry in different states in 2008
+```{r}
+
+
+p10 <- gdp %>% 
+  group_by(GeoName) %>% 
+  arrange(desc(GeoName)) %>% 
+  head(100) %>% 
+  select(X2008) %>% 
+  DT::datatable(options = list(pageLength=500)) %>% 
+  formatCurrency(columns = 'X2008') %>% 
+  formatStyle(.,    'X2008',
+    background = styleColorBar(gdp$X2008, 'steelblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+p10
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Page 4 {data-orientation=rows}
+=====================================     
+   
+Column {data-width=600}
+-------------------------------------
+
+
+### Chart K
+
+```{r}
+p1 <- gdp %>%
+  group_by(GeoName, Description = "Real GDP (millions of chained 2012 dollars)")%>%
+  summarise(avg = mean(X2008))
+  plot_ly(x = ~gdp$X2008,
+          y = ~ gdp$GeoName,
+          color = rainbow(48),
+          type = 'bar')%>%
+  layout(xaxis =list(title="Real GDP by State"),
+         yaxis = list(title = "Count"))
+p1
+
+```
+
+Column {data-width=400}
+-------------------------------------
+
+
+### Comparison of GDP between 2007 and 2008
+```{r}
+
+p4 <- plot_ly(gdp, x = ~X2007, na.rm = TRUE)%>%
+  add_markers(y = ~ X2008,
+              text = ~paste("X2008: ", X2008),
+              showlegend = F)%>%
+  add_lines (y = ~fitted(loess(X2008 ~ X2007), na.rm = TRUE),
+             name = "Loess Smoother",
+             color = I("#FFC125"),
+             showlegend = T,
+             line = list(width =5))%>%
+  layout(xaxis = list(title = "X2007"),
+         yaxis = list(title = "X2008"), na.rm = TRUE)
+
+p4
+
+```
+
+
+###Comparison of GDP between 2008 and 2009
+
+```{r}
+
+p4 <- plot_ly(gdp, x = ~X2008, na.rm = TRUE)%>%
+  add_markers(y = ~ X2009,
+              text = ~paste("X2008: ", X2008),
+              showlegend = F)%>%
+  add_lines (y = ~fitted(loess(X2009 ~ X2008), na.rm = TRUE),
+             name = "Loess Smoother",
+             color = I("#FFC125"),
+             showlegend = T,
+             line = list(width =5))%>%
+  layout(xaxis = list(title = "X2008"),
+         yaxis = list(title = "X2009"), na.rm = TRUE)
+
+p4
+
+```
+
+
+
+
+
+
+
+
+Page 5
+=====================================  
+    
+Column {data-width=600}
+-------------------------------------
+
+
+### Box plots of gdp per State in 2007
+
+```{r}
+
+p6 <- gdp%>%
+  group_by(GeoName)%>%
+  ggvis(~GeoName, ~X2007, fill = ~GeoName)%>%
+  layer_boxplots()
+p6
+```
+   
+Column {data-width=400}
+-------------------------------------
+
+
+###Boxplots of gdp per state in 2008
+```{r}
+p5<- gdp%>%
+  group_by(GeoName)%>%
+  ggvis(~GeoName, ~X2008, fill = ~GeoName)%>%
+  layer_boxplots()
+p5
+```   
+
+
+###Boxplots of gdp per state in 2009
+```{r}
+p5<- gdp%>%
+  group_by(GeoName)%>%
+  ggvis(~GeoName, ~X2009, fill = ~GeoName)%>%
+  layer_boxplots()
+p5
+```
+
+
+
+
+
+
+
+
+Page 6 {data-orientation=rows}
+=====================================     
+   
+Column {data-width=600}
+-------------------------------------
+```{r}
+wage<- read.csv('wages.csv')
+wage <- na.omit(wage)
+```
+
+
+### ggplot of income- Data 2007
+```{r}
+aChart <- ggplot(wage) +
+    geom_col(aes(x = GeoName, y = X2007, fill=GeoName))+
+    labs(title = "Wage per state", 
+         subtitle = "{in US $",
+         caption = "Wage",
+         x= "State",
+         y = "2007 Data(in $)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+```
+Column {data-width=400}
+-------------------------------------
+
+
+### ggplot income- 2008
+```{r}
+aChart <- ggplot(wage) +
+    geom_col(aes(x = GeoName, y = X2008, fill=GeoName))+
+    labs(title = "Wage per state", 
+         subtitle = "{in US $",
+         caption = "Wage",
+         x= "State",
+         y = "2008 Data(in $)",
+         fill="GeoName")
+plotly::ggplotly(aChart)
+```  
+
+
+### ggplot Income- 2009
+```{r}
+aChart <- ggplot(wage) +
+    geom_col(aes(x = GeoName, y = X2009, fill=GeoName))+
+    labs(title = "Wage per state", 
+         subtitle = "{in US $",
+         caption = "Wage",
+         x= "State",
+         y = "2009 Data(in $)",
+         fill="GeoName")
+
+plotly::ggplotly(aChart)
+
+```
